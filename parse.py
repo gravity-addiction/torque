@@ -54,7 +54,7 @@ def parse_formatted_torque_file(file_path):
     return torque_data
 
 # Run and Save
-result = parse_formatted_torque_file("ASTM A36 Steel.txt")
+result = parse_formatted_torque_file("304 Stainless Steel.txt")
 with open("torque_condensed.json", "w") as f:
     json.dump(result, f)
 
